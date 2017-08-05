@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-9">
+        <video-detail *ngIf="selectedVideo" [video]="selectedVideo"></video-detail>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-success" style="margin-bottom:2px;" type="button">new video</button>
+        <video-list (SelectVideo)="onSelectVideo($event)" [videos]="videos"></video-list>
+    </div>
+</div>
